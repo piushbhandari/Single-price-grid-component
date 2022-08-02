@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ramaraja&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+a,
+button {
+  transition: 0.3s ease-in-out;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+.fit-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6eff5;
+  min-height: 100vh;
+}
+.main-content {
+  border-radius: 8px;
+  overflow: hidden;
+  /* animation: rotate360 37s infinite; */
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cards > * {
+  padding: 4rem;
+}
+.grid1 {
+  grid-column: 1 / -1;
+  background: white;
+}
+.grid2 {
+  background: #2ab3b1;
+}
+.grid3 {
+  background: rgba(42, 179, 177, 0.55);
+}
+.cards__header {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.3px;
+  color: #2ab3b1;
+  margin-bottom: 2.4rem;
+}
+.cards__sub-header {
+  margin-bottom: 1.1rem;
+  color: #c0df33;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.225px;
+}
+.cards__description {
+  color: #9aa7be;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.2px;
+  max-width: 55.5rem;
+}
+.cards__description2 {
+  color: white;
+  margin-bottom: 2.6rem;
+}
+
+.cards__secondary-header {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.255px;
+  color: white;
+  margin-bottom: 1.8rem;
+}
+.cards__price {
+  color: white;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+.cards__price span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.cards__cta {
+  display: block;
+  background: #c0df33;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1.5rem 0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.2px;
+  position: relative;
+  overflow: hidden;
+}
+.cards__cta span {
+  position: relative;
+  z-index: 420;
+}
+.cards__cta:hover,
+.cards__cta:focus {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.0973011);
+  background: white;
+  color: #c0df33;
+}
+.cards__cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  transition: 0.5s cubic-bezier(0.94, 0.07, 0.85, 1.02);
+}
+.cards__cta:hover::after,
+.cards__cta:focus::after {
+  width: 100%;
+}
+.cards__reasons-list {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -0.175px;
+  color: rgba(255, 255, 255, 0.75);
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
