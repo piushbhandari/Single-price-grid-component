@@ -127,6 +127,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.1rem;
+  flex-wrap: wrap;
   margin-bottom: 0.4rem;
 }
 .cards__price span {
