@@ -61,7 +61,7 @@ body {
 .main-content {
   border-radius: 8px;
   overflow: hidden;
-  animation: rotate360 25s linear infinite;
+  /* animation: rotate360 25s linear infinite; */
 }
 .cards {
   max-width: 100%;
